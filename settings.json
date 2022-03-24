@@ -39,9 +39,9 @@
   /*es wird die window size vom Vorgännger wiedergegeben wenn neues Window erstellt */
 "window.newWindowDimensions": "inherit",
 
-/* all show the balken  */
+/* "all" show the balken --- "none" dont display änderungen */
 /* git version controll */
-"scm.diffDecorations": "none",
+"scm.diffDecorations": "all",
 
 
 
@@ -563,7 +563,8 @@
   "name": "react tsx component  ",
   "scope": "support.class.component.tsx",
   "settings": {
-      "foreground": "#b3b45d", //
+      "foreground": "#389ddb", //
+      "fontStyle": "bold"
   }
 },
 
@@ -583,6 +584,18 @@
       "foreground": "#333333", //
   }
 },
+
+
+{    /* tsx constant */
+  "name": "constant ",
+  "scope": "variable.other.constant.object.tsx",
+  "settings": {
+      "foreground": "#333333", //
+  }
+},
+
+
+
 
 /* dark mode "foreground": "#A9B7C6", // */
 
@@ -1304,7 +1317,7 @@
   "name": "react component  ",
   "scope": "support.class.component.js",
   "settings": {
-      "foreground": "#b3b45d", //
+      "foreground": "#1464f2", //
   }
 },
 // C1A556
@@ -1446,11 +1459,12 @@
       "Lab": {
         
         // "foreground": "#B9B9B9",
-        "foreground": "#80CE00",
-        "background" : "#7E7E7E",
+         "foreground": "#B088F9",
+        // "foreground": "#80CE00",
+        "background" : "#4e504aa6",
         "icon": "beaker",
           "iconColour": "#B088F9",
-          "type": "line",
+          // "type": "line",
           // "icon": "beaker",
           "gutterIcon": true,
       },
@@ -1571,7 +1585,7 @@
       "yaml": false,
       "plaintext": false,
       "markdown": false,
-      "javascript": false,
+      "javascript": true,
       "vue": false,
       "html": false,
       "python": false,
