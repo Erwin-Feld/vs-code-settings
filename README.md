@@ -1,5 +1,13 @@
 # vs-code-settings
 
 
-vs code settings Stand 26.01.22
+vs code settings Stand 24.03.22
+
+Addons
+
+vscode-angular-html
+prettier
+path intelisense
+material icon theme
+angular lenguage service
 
