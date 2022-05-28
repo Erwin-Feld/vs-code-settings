@@ -21,6 +21,15 @@
   "zenMode.hideStatusBar": true,
 
 
+  /* MD files */
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+
+
+  /* local history */
+  "workbench.localHistory.enabled": true,
+
 
   /*vs code ui settings */
   "editor.lightbulb.enabled": true,
@@ -30,6 +39,8 @@
   
 
   "editor.fontSize": 13,
+
+  "editor.bracketPairColorization.enabled": false,
 
   "editor.suggest.preview": true,
 
@@ -53,7 +64,6 @@
   /*show points ... */
   
 "editor.renderWhitespace": "boundary",
-"editor.renderIndentGuides": true,
 
   /* ui color customisation */
   "workbench.colorCustomizations": {
@@ -70,7 +80,7 @@
       
   // left sidebar color
   "sideBar.background": "#b9bdc0",
-  
+
   // /* unterste leuste */
   // "statusBar.background": "#DB6EA6",
  "statusBar.background": "#08AE8A",
@@ -95,6 +105,7 @@
   
   /* Git */
   "git.allowForcePush": true,
+
 
 
   /* python */
@@ -1662,6 +1673,8 @@
     "notebook.lineNumbers": "on",
     "projectManager.sortList": "Recent",
     "notebook.output.textLineLimit": 50,
+    "editor.linkedEditing": true,
+    "editor.guides.indentation": true,
     // "highlight.regexes": {
     //   "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
     //     "filterFileRegex": ".*(?<!CHANGELOG.md)$",
