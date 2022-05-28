@@ -3,18 +3,23 @@
 
 vs code settings Stand 24.03.22
 
-Addons
+### Addons
 
-vscode-angular-html
-prettier
-path intelisense
-material icon theme
-angular lenguage service
-angular Snippet Version 13
-Auto rename Tag
-Project Manager
+* angular lenguage service
+* Auto rename Tag
+* angular Snippet Version 13
+* ESLint
+* Gitgraph
+* Markup Preview Github Styling
+* Material Icon Theme
+* Path Intellisense
+* Prettier
+* Project Manager
+* TODO Tree
+* vs code angular html
 
-#Angular
-angular chrome extension
-angular store -- ReduxDevtools
+
+## angular chrome extension
+* angular 
+* store -- ReduxDevtools
 
