@@ -1,4 +1,5 @@
 {
+  
 
 
   "terminal.integrated.profiles.windows": {
@@ -21,11 +22,28 @@
   "zenMode.hideStatusBar": true,
 
 
-  /* MD files */
+
+  /* readME files  start */
+  "markdown-preview-enhanced.previewTheme": "newsprint.css",
+
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
+    // "*.md": "vscode.markdown.preview.editor",
+   
+    
   },
 
+  "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 70,
+    "editor.fontFamily": "'Roboto Mono', monospace",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 22,
+    
+
+  
+},
+
+  /* MD files end */
 
   /* local history */
   "workbench.localHistory.enabled": true,
@@ -34,7 +52,7 @@
   /*vs code ui settings */
   "editor.lightbulb.enabled": true,
 
-  "editor.fontFamily": "Hack",
+  "editor.fontFamily": "'Roboto Mono', monospace", 
   /*font size  */
   
 
@@ -57,7 +75,7 @@
 
 
 
-"workbench.colorTheme": "Default Light+",
+"workbench.colorTheme": "Visual Studio Light",
 
 "window.titleBarStyle": "custom",
 
@@ -67,19 +85,61 @@
 
   /* ui color customisation */
   "workbench.colorCustomizations": {
+
+    /* terminal start */
+    "terminal.background":"#000000",
+    "terminal.foreground":"#D0D0D0",
+    "terminalCursor.background":"#D0D0D0",
+    "terminalCursor.foreground":"#D0D0D0",
+    "terminal.ansiBlack":"#000000",
+    "terminal.ansiBlue":"#0066FF",
+    "terminal.ansiBrightBlack":"#808080",
+    "terminal.ansiBrightBlue":"#0066FF",
+    "terminal.ansiBrightCyan":"#00FFFF",
+    "terminal.ansiBrightGreen":"#33FF00",
+    "terminal.ansiBrightMagenta":"#CC00FF",
+    "terminal.ansiBrightRed":"#FF0000",
+    "terminal.ansiBrightWhite":"#FFFFFF",
+    "terminal.ansiBrightYellow":"#FF0099",
+    "terminal.ansiCyan":"#00FFFF",
+    "terminal.ansiGreen":"#33FF00",
+    "terminal.ansiMagenta":"#CC00FF",
+    "terminal.ansiRed":"#FF0000",
+    "terminal.ansiWhite":"#D0D0D0",
+    "terminal.ansiYellow":"#FF0099",
+    /* terminalk end */
+
+
       "editorRuler.foreground": "#027ffc",
 
         // selected line color of that line number
   "editorLineNumber.activeForeground": "#d35c8e",
-
     
    // line number bar  previos line color  "editorGutter.background": "#bbb8b8f5",
-   "editorGutter.background": "#CECECE",
-       // editor backgroeund
+
+
+   /* ------readme editing------------------------------------------- */
+       /* --> coding */
+    "editorGutter.background": "#CECECE",
+  
+     /* readme --> */
+    //  "editorGutter.background": "#f8f8f8",
+
   "editor.background": "#CECECE",
-      
-  // left sidebar color
+  
+  /* readme --> */
+  // "editor.background": "#f8f8f8",
+  
+    /* editor background  end*/
+
+   /* ------------------------------------------------- */
+
+  /* left sidebar color start */
+
+
   "sideBar.background": "#b9bdc0",
+
+
 
   // /* unterste leuste */
   // "statusBar.background": "#DB6EA6",
@@ -231,6 +291,59 @@
       "foreground": "#242525",
   }
 },
+
+ /* ********* Markdown********************************* */
+  /* Markdown start */
+
+
+  {
+    "name": "link title",
+    "scope": "string.other.link.title.markdown",
+    "settings": {
+        "foreground": "#22abd8",
+       
+        
+       
+    }
+  },
+
+  {
+    "name": "header",
+    "scope": "entity.name.section.markdown",
+    "settings": {
+        "foreground": "#333333",
+    }
+  },
+
+  {
+    "name": "header lvl",
+    "scope": "punctuation.definition.heading.markdown",
+    "settings": {
+        "foreground": "#9a9d9f",
+    }
+  },
+
+
+  {
+    "name": "link",
+    "scope": "markup.underline.link.markdown",
+    "settings": {
+        "foreground": "#22abd8",
+    }
+  },
+
+  {
+    "name": "inline link",
+    "scope": "markup.inline.raw.string.markdown",
+    "settings": {
+        "foreground": "#42b983",
+        "fontStyle": "italic",
+    }
+  },
+
+
+
+  /* Markdown end */
 
 
 
@@ -756,6 +869,17 @@
   }
 },
 
+/* Angular Material color spec start */
+{    
+  "name": "angular material html tag",
+  "scope": "constant.character.entity.ng-html",
+  "settings": {
+      "foreground": "#5061d7", //
+  }
+},
+
+
+/* Angular Material color spec end */
 
 
 // ---------- javascript ----------------------------
@@ -1405,10 +1529,11 @@
 
     "todo-tree.highlights.customHighlight": {
       "TODO": {
-          "icon": "markdown",
+          "icon": "megaphone",
           // // E7305B
-          "foreground": "#B2B1B9",
-          "background" : "#E7305B",
+          // "foreground": "#E7305B",
+          // "foreground": "#B2B1B9",
+          "background" : "#cecece",
           // "background" : "#f5f7b2",
           "type": "line",
           "iconColour": "#E7305B",
@@ -1610,12 +1735,12 @@
         "decorations": [
           {
             "overviewRulerColor": "#ffcc00",
-            "backgroundColor": "#ffcc00",
+            // "backgroundColor": "#ffcc00",
             "color": "#1f1f1f",
             "fontWeight": "bold"
           },
           {
-            "backgroundColor": "#ffcc00",
+            // "backgroundColor": "#ffcc00",
             "color": "#1f1f1f"
           }
         ]
@@ -1671,10 +1796,19 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "liveServer.settings.donotVerifyTags": true,
     "notebook.lineNumbers": "on",
-    "projectManager.sortList": "Recent",
+    "projectManager.sortList": "Saved",
     "notebook.output.textLineLimit": 50,
     "editor.linkedEditing": true,
     "editor.guides.indentation": true,
+    "theme-by-language.themes": {
+      "markdown": "Visual Studio Dark",
+      "typescript": "Visual Studio Light"
+    },
+    "githubPullRequests.createOnPublishBranch": "never",
+    "yaml.schemas": {
+      "file:///c%3A/Users/ErwinFeld/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "redhat.telemetry.enabled": false,
     // "highlight.regexes": {
     //   "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
     //     "filterFileRegex": ".*(?<!CHANGELOG.md)$",
@@ -1804,8 +1938,3 @@
       // https://stackoverflow.com/questions/64944552/is-there-a-way-to-change-color-of-only-vue-directives-in-vscode
 
 }
-
-
-
-
-
